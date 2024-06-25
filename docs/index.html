@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Panto</title>
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a class="logo" href="#!">Panto</a>
+					<nav class="header__nav nav">
+						<ul class="nav-list">
+							<li class="nav-list__item">
+								<a class="nav-list__link nav-list__link--dropdown" href="#!">Furniture</a>
+								<div class="nav-list__sub-nav">
+									<ul class="sub-nav">
+										<li class="sub-nav__item">
+											<a class="sub-nav__link" href="#!">Home</a>
+										</li>
+										<li class="sub-nav__item">
+											<a class="sub-nav__link" href="#!">Services</a>
+										</li>
+										<li class="sub-nav__item">
+											<a class="sub-nav__link" href="#!">Products</a>
+										</li>
+										<li class="sub-nav__item">
+											<a class="sub-nav__link" href="#!">Contacts</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-list__item"><a class="nav-list__link" href="#!">Shop</a></li>
+							<li class="nav-list__item"><a class="nav-list__link" href="#!">About Us</a></li>
+							<li class="nav-list__item"><a class="nav-list__link" href="#!">Contact</a></li>
+						</ul>
+					</nav>
+
+					<a class="cart" href="#!">
+						<svg class="icon icon--cart cart__img">
+							<use href="./img/svgsprite/sprite.symbol.svg#cart"></use>
+						</svg>
+						<div class="cart__count">0</div>
+					</a>
+
+					<button class="nav__btn" id="open-mobile-nav">
+						<svg class="icon icon--mobile-nav">
+							<use href="./img/svgsprite/sprite.symbol.svg#mobile-nav"></use>
+						</svg>
+					</button>
+				</div>
+
+				<div class="header__content">
+					<h1 class="header__title">
+						Make your interior more minimalistic & modern
+					</h1>
+					<p>
+						Turn your room with panto into a&#160;lot more minimalist and modern with ease and speed
+					</p>
+
+					<form class="header__search search-form" action="">
+						<input class="search-form__input" type="text" placeholder="Search furniture" autocomplete="off" />
+						<button class="search-form__btn" type="submit">
+							<svg class="icon icon--search">
+								<use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+
+				<div class="header__dot header__dot--sofa">
+					<button class="info-dot">
+						<div class="info-dot__circle"></div>
+						<div class="info-dot__radius"></div>
+					</button>
+
+					<div class="info-hint none">
+						<label>
+							<input class="info-hint__radio" type="radio" name="sofa-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+						</label>
+
+						<label>
+							<input class="info-hint__radio" type="radio" name="sofa-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+						</label>
+
+						<label>
+							<input class="info-hint__radio" type="radio" name="sofa-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+						</label>
+					</div>
+				</div>
+
+				<div class="header__dot header__dot--vase">
+					<button class="info-dot">
+						<div class="info-dot__circle"></div>
+						<div class="info-dot__radius"></div>
+					</button>
+					<div class="info-hint none">
+						<label>
+							<input class="info-hint__radio" type="radio" name="vase-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+						</label>
+
+						<label>
+							<input class="info-hint__radio" type="radio" name="vase-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+						</label>
+
+						<label>
+							<input class="info-hint__radio" type="radio" name="vase-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+						</label>
+					</div>
+				</div>
+
+				<div class="header__dot header__dot--item">
+					<button class="info-dot">
+						<div class="info-dot__circle"></div>
+						<div class="info-dot__radius"></div>
+					</button>
+					<div class="info-hint none">
+						<label>
+							<input class="info-hint__radio" type="radio" name="item-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+						</label>
+
+						<label>
+							<input class="info-hint__radio" type="radio" name="item-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+						</label>
+
+						<label>
+							<input class="info-hint__radio" type="radio" name="item-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+						</label>
+					</div>
+				</div>
+
+				<div class="header__dot header__dot--wall">
+					<button class="info-dot">
+						<div class="info-dot__circle"></div>
+						<div class="info-dot__radius"></div>
+					</button>
+					<div class="info-hint none">
+						<label>
+							<input class="info-hint__radio" type="radio" name="wall-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--orange"></div>
+						</label>
+
+						<label>
+							<input class="info-hint__radio" type="radio" name="wall-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--biruza"></div>
+						</label>
+
+						<label>
+							<input class="info-hint__radio" type="radio" name="wall-color" />
+							<div class="info-hint__radio-fake info-hint__radio-fake--gray"></div>
+						</label>
+					</div>
+				</div>
+				<svg class="icon icon--example">
+					<use href="./img/svgsprite/sprite.symbol.svg#example"></use>
+				</svg>
+			</div>
+		</header>
+		<main class="docs">
+			<section class="benefits">
+				<div class="container">
+					<div class="benefits__grid">
+						<div class="benefits__title">
+							<h2 class="title-2">
+								Why Choosing Us
+							</h2>
+						</div>
+
+						<div class="benefit">
+							<h3 class="benefit__title">
+								Luxury facilities
+							</h3>
+							<p class="benefit__text">
+								The advantage of&#160;hiring a&#160;workspace with us&#160;is&#160;that givees you comfortable service and all-around facilities.
+							</p>
+							<a class="read-more" href="#!">
+								More Info
+							</a>
+						</div>
+
+						<div class="benefit">
+							<h3 class="benefit__title">
+								Affordable Price
+							</h3>
+							<p class="benefit__text">
+								You can get a&#160;workspace of&#160;the highst quality at&#160;an&#160;affordable price and still enjoy the facilities that are oly here.
+							</p>
+							<a class="read-more" href="#!">
+								More Info
+							</a>
+						</div>
+
+						<div class="benefit">
+							<h3 class="benefit__title">
+								Many Choices
+							</h3>
+							<p class="benefit__text">
+								We&#160;provide many unique work space choices so&#160;that you can choose the workspace to&#160;your liking.
+							</p>
+							<a class="read-more" href="#!">
+								More Info
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products">
+				<div class="container">
+					<div class="products__title">
+						<h2 class="title-2">Best Selling Product</h2>
+					</div>
+
+					<div class="products__tabs">
+						<div class="tab-controls">
+							<button class="tab-controls__btn tab-controls__btn--active" data-tab="all">All</button>
+							<button class="tab-controls__btn" data-tab="chair">Chair</button>
+							<button class="tab-controls__btn" data-tab="bed">Beds</button>
+							<button class="tab-controls__btn" data-tab="sofa">Sofa</button>
+							<button class="tab-controls__btn" data-tab="lamp">Lamp</button>
+						</div>
+					</div>
+
+					<div class="products__slider">
+						<div class="slider">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<article class="card swiper-slide" data-tab-value="chair">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-01.png" scrset="./../../img/products/chair-01@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Chair</a>
+											<h3 class="card__title">Sakarias Armchair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">392</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="bed">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-02.png" scrset="./../../img/products/chair-02@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Bed</a>
+											<h3 class="card__title">Baltsar Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">299</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="sofa">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-03.png" scrset="./../../img/products/chair-03@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Sofa</a>
+											<h3 class="card__title">Anjay Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">519</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="lamp">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-04.png" scrset="./../../img/products/chair-04@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Lamp</a>
+											<h3 class="card__title">Nyantuy Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">921</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+
+									<article class="card swiper-slide" data-tab-value="chair">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-01.png" scrset="./../../img/products/chair-01@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Chair</a>
+											<h3 class="card__title">Sakarias Armchair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">392</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="bed">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-02.png" scrset="./../../img/products/chair-02@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Bed</a>
+											<h3 class="card__title">Baltsar Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">299</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="sofa">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-03.png" scrset="./../../img/products/chair-03@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Sofa</a>
+											<h3 class="card__title">Anjay Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">519</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="lamp">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-04.png" scrset="./../../img/products/chair-04@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Lamp</a>
+											<h3 class="card__title">Nyantuy Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">921</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+
+									<article class="card swiper-slide" data-tab-value="chair">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-01.png" scrset="./../../img/products/chair-01@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Chair</a>
+											<h3 class="card__title">Sakarias Armchair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">392</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="bed">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-02.png" scrset="./../../img/products/chair-02@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Bed</a>
+											<h3 class="card__title">Baltsar Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">299</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="sofa">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-03.png" scrset="./../../img/products/chair-03@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Sofa</a>
+											<h3 class="card__title">Anjay Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">519</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="lamp">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-04.png" scrset="./../../img/products/chair-04@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Lamp</a>
+											<h3 class="card__title">Nyantuy Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">921</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+
+									<article class="card swiper-slide" data-tab-value="chair">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-01.png" scrset="./../../img/products/chair-01@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Chair</a>
+											<h3 class="card__title">Sakarias Armchair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">392</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="bed">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-02.png" scrset="./../../img/products/chair-02@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Bed</a>
+											<h3 class="card__title">Baltsar Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">299</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="sofa">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-03.png" scrset="./../../img/products/chair-03@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Sofa</a>
+											<h3 class="card__title">Anjay Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">519</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="lamp">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-04.png" scrset="./../../img/products/chair-04@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Lamp</a>
+											<h3 class="card__title">Nyantuy Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">921</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+
+									<article class="card swiper-slide" data-tab-value="chair">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-01.png" scrset="./../../img/products/chair-01@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Chair</a>
+											<h3 class="card__title">Sakarias Armchair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">392</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="bed">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-02.png" scrset="./../../img/products/chair-02@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Bed</a>
+											<h3 class="card__title">Baltsar Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">299</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="sofa">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-03.png" scrset="./../../img/products/chair-03@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Sofa</a>
+											<h3 class="card__title">Anjay Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star icon--star--off">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">519</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+									<article class="card swiper-slide" data-tab-value="lamp">
+										<a class="card__link" href="#product-page"></a>
+
+										<div class="card__photo">
+											<img class="card__img" src="./img/products/chair-04.png" scrset="./../../img/products/chair-04@2x.png 2x" alt="card image" />
+										</div>
+										<div class="card__desc">
+											<a class="card__category" href="#category">Lamp</a>
+											<h3 class="card__title">Nyantuy Chair</h3>
+											<div class="card__rating">
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+												<svg class="icon icon--star">
+													<use href="./img/svgsprite/sprite.symbol.svg#star"></use>
+												</svg>
+											</div>
+											<div class="card__footer">
+												<div class="card__price" data-value="€">921</div>
+												<button class="card__btn">
+													add to&#160;cart
+													<svg class="icon icon--plus">
+														<use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+
+							<button id="slider-prev" class="slider__btn slider__btn--prev">
+								<img src="./img/slider/arrow-left.svg" alt="prev" />
+							</button>
+							<button id="slider-next" class="slider__btn slider__btn--next">
+								<img src="./img/slider/arrow-right.svg" alt="next" />
+							</button>
+						</div>
+
+						<div class="products__link">
+							<a class="read-more read-more--large" href="#!">View All</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="container container--small">
+					<!-- Footer grid -->
+					<div class="footer__grid">
+						<!-- Desc -->
+						<div class="footer__desc">
+							<div class="footer__logo">
+								<a class="logo" href="#!">Panto</a>
+							</div>
+							<p>
+								The advantage of&#160;hiring a&#160;workspace with us&#160;is&#160;that givees you comfortable service and all-around facilities.
+							</p>
+						</div>
+						<!-- // Desc -->
+
+						<nav class="footer__nav footer__nav--services">
+							<h3 class="footer__nav-title">Services</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a class="footer__list-link" href="#!">Email Marketing</a>
+								</li>
+								<li class="footer__list-item">
+									<a class="footer__list-link" href="#!">Campaigns</a>
+								</li>
+								<li class="footer__list-item">
+									<a class="footer__list-link" href="#!">Branding</a>
+								</li>
+							</ul>
+						</nav>
+
+						<nav class="footer__nav">
+							<h3 class="footer__nav-title">Furniture</h3>
+							<ul class="footer__list">
+								<li class="footer__list-item">
+									<a class="footer__list-link" href="#!">Beds</a>
+								</li>
+								<li class="footer__list-item">
+									<a class="footer__list-link" href="#!">Chair</a>
+								</li>
+								<li class="footer__list-item">
+									<a class="footer__list-link" href="#!">All</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!-- // Footer grid -->
+
+					<!-- Footer row -->
+					<div class="footer__row">
+						<div class="footer__copyright">Copyright &#169; 2024</div>
+						<div class="footer__links">
+							<a class="footer__link" href="#!">Terms & Conditions</a>
+							<a class="footer__link" href="#!">Privacy Policy</a>
+						</div>
+					</div>
+					<!-- // Footer row -->
+				</div>
+			</footer>
+			<!-- mobile navigation -->
+			<div class="mobile-nav__wrapper" id="mobile-nav">
+				<div class="mobile-nav-header">
+					<a class="mobile-cart" href="#cart">
+						<div class="cart" href="#!">
+							<svg class="icon icon--cart cart__img">
+								<use href="./img/svgsprite/sprite.symbol.svg#cart"></use>
+							</svg>
+							<div class="cart__count">0</div>
+						</div>
+						Cart
+					</a>
+
+					<button class="mobile-nav-btn-close" id="close-mobile-nav">
+						<svg class="icon icon--close">
+							<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+						</svg>
+					</button>
+				</div>
+
+				<ul class="mobile-nav">
+					<li class="mobile-nav__item">
+						<a class="mobile-nav__link mobile-nav__link--dropdown" href="#!">Furniture</a>
+
+						<ul class="mobile-sub-nav">
+							<li class="mobile-sub-nav__item">
+								<a class="mobile-sub-nav__link" href="#!">Home</a>
+							</li>
+							<li class="mobile-sub-nav__item">
+								<a class="mobile-sub-nav__link" href="#!">Services</a>
+							</li>
+							<li class="mobile-sub-nav__item">
+								<a class="mobile-sub-nav__link" href="#!">Products</a>
+							</li>
+							<li class="mobile-sub-nav__item">
+								<a class="mobile-sub-nav__link" href="#!">Contacts</a>
+							</li>
+						</ul>
+					</li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">Shop</a></li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">About Us</a></li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">Contact</a></li>
+				</ul>
+			</div>
+		</main>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

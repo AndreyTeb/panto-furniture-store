@@ -1,0 +1,54 @@
+.info-hint {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -150%);
+
+
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  gap: 8px;
+
+  background-image: url('./../img/header/hint.svg');
+  width: 112px;
+  height: 56px;
+
+  &__radio {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  &__radio:checked+.info-hint__radio-fake {
+    background-image: url(./../img/header/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__radio-fake {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+
+    &--orange {
+      background-color: var(--ui-orange);
+    }
+
+    &--biruza {
+      background-color: var(--ui-biruza);
+    }
+
+    &--gray {
+      background-color: var(--ui-gray);
+    }
+  }
+}

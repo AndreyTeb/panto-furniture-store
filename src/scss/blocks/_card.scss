@@ -1,0 +1,99 @@
+.card {
+  position: relative;
+  width: 268px;
+  font-family: var(--font-cards);
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__photo {
+    margin-top: 50px;
+    height: 240px;
+    background-color: #fafafa;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+  }
+
+  &__img {
+    margin: -50px auto 0;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    height: 202px;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    padding: 14px 22px 28px;
+  }
+
+  &__category {
+    position: relative;
+    z-index: 3;
+    font-size: 16px;
+    color: var(--text-muted);
+  }
+
+  &__title {
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--text-card-dark-blue);
+  }
+
+  &__rating {
+    display: flex;
+    gap: 3px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: flex-start;
+    gap: 3px;
+
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text-card-dark-blue);
+
+    &::before {
+      content: attr(data-value);
+
+      font-size: 15px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 3;
+    width: 48px;
+    height: 48px;
+    background-color: var(--ui-dark-blue);
+    border-radius: 50%;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

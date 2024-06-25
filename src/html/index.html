@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panto</title>
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body>
+  @@include('blocks/header.html')
+  <main class="docs">
+    @@include('blocks/benefits.html')
+    @@include('blocks/products.html')
+    @@include('blocks/footer.html')
+    <!-- mobile navigation -->
+    <div class="mobile-nav__wrapper" id="mobile-nav">
+
+      <div class="mobile-nav-header">
+        <a class="mobile-cart" href="#cart">
+          <div class="cart" href="#!">
+            <svg class="icon icon--cart cart__img">
+              <use href="./img/svgsprite/sprite.symbol.svg#cart"></use>
+            </svg>
+            <div class="cart__count">0</div>
+          </div>
+          Cart
+        </a>
+
+        <button class="mobile-nav-btn-close" id="close-mobile-nav">
+          <svg class="icon icon--close">
+            <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+
+
+
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link mobile-nav__link--dropdown" href="#!">Furniture</a>
+
+          <ul class="mobile-sub-nav">
+            <li class="mobile-sub-nav__item">
+              <a class="mobile-sub-nav__link" href="#!">Home</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a class="mobile-sub-nav__link" href="#!">Services</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a class="mobile-sub-nav__link" href="#!">Products</a>
+            </li>
+            <li class="mobile-sub-nav__item">
+              <a class="mobile-sub-nav__link" href="#!">Contacts</a>
+            </li>
+          </ul>
+
+        </li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">Shop</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">About Us</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#!">Contact</a></li>
+      </ul>
+    </div>
+  </main>
+  <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>

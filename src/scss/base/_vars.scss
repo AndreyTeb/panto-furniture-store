@@ -1,0 +1,35 @@
+:root {
+  --container-width: 1310px;
+  --container-padding: 15px;
+
+  --font-main: "Gilroy", sans-serif;
+  --font-accent: "DM Sans", sans-serif;
+  --font-cards: "Inter", sans-serif;
+  --font-titles: var(--font-accent);
+
+  --text-color: #1e1e1e;
+  --text-muted: #8d8d8d;
+  --text-card-dark-blue: #0d1b39;
+  --accent: #e58411;
+  --link-color: #fff;
+
+  --header-text-color: #fff;
+
+  --footer-accent: #f6973f;
+  --footer-bg: #2d2f33;
+  --footer-text-color: rgba(255, 255, 255, .8);
+
+  --ui-orange: #e58411;
+  --ui-gray: #7c7c7c;
+  --ui-biruza: #00d6c9;
+  --ui-dark-blue: #0d1b39;
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}
